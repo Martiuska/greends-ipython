@@ -12,10 +12,10 @@ class Tray:
         return self.__growth_stage
 
     # Public setter method to change the growth stage
-    def set_growth_stage(self, stage):
+    def set_growth_stage(self, stage):  # I have the set and the get 
         valid_stages = ["Seed", "Sprout", "Seedling", "Mature Plant"]
         if stage in valid_stages:
-            self.__growth_stage = stage
+            self.__growth_stage = stage 
         else:
             print(f"Invalid growth stage: {stage}")
 
@@ -30,11 +30,11 @@ class Tray:
         else:
             print("Plants are already fully grown!")
 
-# Example usage
+# Example usage 
 tray = Tray("Tomato", 30)
 print("Seed Type:", tray.seed_type)
 print("Number of Seeds:", tray.num_of_seeds)
-print("Current Growth Stage:", tray.get_growth_stage())
+print("Current Growth Stage:", tray.get_growth_stage()) # I cannot always have __ 
 
 # Using the setter to update growth stage
 tray.set_growth_stage("Seedling")
